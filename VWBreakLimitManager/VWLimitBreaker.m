@@ -90,7 +90,7 @@ typedef NS_ENUM(NSInteger, BreakerRunningState) {
 
 @implementation VWBreakerTask {
     dispatch_queue_t _statisticsQueue;
-    dispatch_queue_t _sessionTasksCompetionQueue;
+//    dispatch_queue_t _sessionTasksCompetionQueue;
     dispatch_queue_t _ioQueue;
 }
 
@@ -102,7 +102,7 @@ static NSURL *_sysCacheDirectory;
         manager = [AFHTTPSessionManager manager];
     }
     _statisticsQueue = dispatch_queue_create("com.voicewh.limitbreak.statistics", DISPATCH_QUEUE_CONCURRENT);
-    _sessionTasksCompetionQueue = dispatch_queue_create("com.voicewh.limitbreak.sessiontasks", DISPATCH_QUEUE_CONCURRENT);
+//    _sessionTasksCompetionQueue = dispatch_queue_create("com.voicewh.limitbreak.sessiontasks", DISPATCH_QUEUE_CONCURRENT);
     _ioQueue = dispatch_queue_create("com.voicewh.limitbreak.io", DISPATCH_QUEUE_CONCURRENT);
     NSProgress *downloadProgress = [[NSProgress alloc]initWithParent:nil userInfo:nil];
     [downloadProgress addObserver:self forKeyPath:NSStringFromSelector(@selector(fractionCompleted)) options:NSKeyValueObservingOptionNew context:NULL];
@@ -361,6 +361,10 @@ static NSURL *_sysCacheDirectory;
 static VWLogLevel _logLevel;
 
 @implementation VWLimitBreaker
+
++ (instancetype)breaker {
+    return [[self alloc]init];
+}
 
 - (void)downloadWithMethod:(NSString *)method URLString:(NSString *)URLString bandwidth:(double)bandwidth limit:(double)limit progress:(void (^)(NSProgress *downloadProgress))downloadProgress completionHandler:(void(^)(NSURL *filePath, NSError *error))completionHandler {
     
