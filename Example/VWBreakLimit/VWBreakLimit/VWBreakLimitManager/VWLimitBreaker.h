@@ -37,7 +37,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, class, assign) VWLogLevel logLevel;
 
-//@property (nonatomic)
++ (instancetype)breaker;
+
 - (void)downloadWithMethod:(NSString *)method URLString:(NSString *)URLString bandwidth:(double)bandwidth limit:(double)limit progress:(void (^)(NSProgress *downloadProgress))downloadProgress completionHandler:(void(^)(NSURL *filePath, NSError *error))completionHandler;
 
 @end

@@ -18,18 +18,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="124.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Lg-ZT-FYd">
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Lg-ZT-FYd">
                         <rect key="frame" x="51" y="20" width="150" height="2"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </progressView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUH-gu-eHi">
-                        <rect key="frame" x="20" y="93.5" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Size" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VUH-gu-eHi">
+                        <rect key="frame" x="20" y="93.5" width="32.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-CM-GEh">
-                        <rect key="frame" x="258" y="93.5" width="42" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NJ8-CM-GEh">
+                        <rect key="frame" x="250.5" y="93.5" width="49.5" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -38,6 +37,9 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="NJ8-CM-GEh" secondAttribute="trailing" constant="20" id="1uj-gT-Ctl"/>
                     <constraint firstAttribute="bottom" secondItem="VUH-gu-eHi" secondAttribute="bottom" constant="10" id="Bk6-4c-h08"/>
+                    <constraint firstItem="3Lg-ZT-FYd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="FAQ-Cj-2P8"/>
+                    <constraint firstAttribute="trailing" secondItem="3Lg-ZT-FYd" secondAttribute="trailing" constant="20" id="OCs-lj-Jcd"/>
+                    <constraint firstItem="3Lg-ZT-FYd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="RuL-uB-cv3"/>
                     <constraint firstAttribute="bottom" secondItem="NJ8-CM-GEh" secondAttribute="bottom" constant="10" id="uLj-bn-vTl"/>
                     <constraint firstItem="VUH-gu-eHi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="uos-X2-NaS"/>
                 </constraints>

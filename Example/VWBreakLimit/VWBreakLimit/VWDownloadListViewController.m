@@ -38,7 +38,6 @@
     [super viewDidLoad];
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addTask)];
     self.navigationController.navigationBar.tintColor = [UIColor redColor];
-    // Do any additional setup after loading the view.
     VWDownloadCell *cell = [[[NSBundle mainBundle]loadNibNamed:@"VWDownloadCell" owner:self options:nil]lastObject];
     self.cell = cell;
     self.tasks = [NSMutableArray new];
@@ -78,9 +77,13 @@
 }
 
 - (void)GET:(NSString *)URLString {
+    if(!URLString) {
+        NSLog(@"URLString can not be nil");
+        return;
+    }
     [self.timer setFireDate:[NSDate date]];
     VWLimitBreaker.logLevel = VWLogLevelAll;
-    VWLimitBreaker *breaker = [VWLimitBreaker new];
+    VWLimitBreaker *breaker = [VWLimitBreaker breaker];
     [breaker downloadWithMethod:@"GET" URLString:URLString bandwidth:2*Bytes_M limit:200*Bytes_K progress:^(NSProgress *downloadProgress) {
         
         NSLog(@"mainprogress completed: %zd",downloadProgress.completedUnitCount);
@@ -95,6 +98,7 @@
     } completionHandler:^(NSURL *filePath, NSError *error) {
         self.timer = nil;
     }];
+    //unique running task
     [self.tasks removeAllObjects];
     [self.tasks addObject:URLString?:@""];
     [self.tableView reloadData];
@@ -113,7 +117,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 200;
+    return 150;
 }
 
 /*
