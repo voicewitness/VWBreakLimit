@@ -1,0 +1,653 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D16E8940174CFFDB17440A6 /* libPods-VWBreakLimit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FC1FFECC8F3FB1253EF26E33 /* libPods-VWBreakLimit.a */; };
+		541A42171E821D2600ADE976 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A42161E821D2600ADE976 /* main.m */; };
+		541A421A1E821D2600ADE976 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A42191E821D2600ADE976 /* AppDelegate.m */; };
+		541A421D1E821D2600ADE976 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A421C1E821D2600ADE976 /* ViewController.m */; };
+		541A42201E821D2600ADE976 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541A421E1E821D2600ADE976 /* Main.storyboard */; };
+		541A42221E821D2600ADE976 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 541A42211E821D2600ADE976 /* Assets.xcassets */; };
+		541A42251E821D2600ADE976 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 541A42231E821D2600ADE976 /* LaunchScreen.storyboard */; };
+		541A42301E821D2600ADE976 /* VWBreakLimitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A422F1E821D2600ADE976 /* VWBreakLimitTests.m */; };
+		541A423B1E821D2600ADE976 /* VWBreakLimitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A423A1E821D2600ADE976 /* VWBreakLimitUITests.m */; };
+		541A424A1E821F9A00ADE976 /* VWDownloadListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A42491E821F9A00ADE976 /* VWDownloadListViewController.m */; };
+		541A424E1E82200800ADE976 /* VWDownloadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A424C1E82200800ADE976 /* VWDownloadCell.m */; };
+		541A424F1E82200800ADE976 /* VWDownloadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 541A424D1E82200800ADE976 /* VWDownloadCell.xib */; };
+		541A42981E83BDC000ADE976 /* VWLimitBreaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 541A42971E83BDBF00ADE976 /* VWLimitBreaker.m */; };
+		54E2CDB51E865030004EE225 /* VWFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2CDB41E865030004EE225 /* VWFileHelper.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		541A422C1E821D2600ADE976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541A420A1E821D2600ADE976 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541A42111E821D2600ADE976;
+			remoteInfo = VWBreakLimit;
+		};
+		541A42371E821D2600ADE976 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 541A420A1E821D2600ADE976 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 541A42111E821D2600ADE976;
+			remoteInfo = VWBreakLimit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4A5CFFD863E7E7C1A9355926 /* Pods-VWBreakLimit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VWBreakLimit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VWBreakLimit/Pods-VWBreakLimit.debug.xcconfig"; sourceTree = "<group>"; };
+		541A42121E821D2600ADE976 /* VWBreakLimit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VWBreakLimit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		541A42161E821D2600ADE976 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		541A42181E821D2600ADE976 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		541A42191E821D2600ADE976 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		541A421B1E821D2600ADE976 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		541A421C1E821D2600ADE976 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		541A421F1E821D2600ADE976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		541A42211E821D2600ADE976 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		541A42241E821D2600ADE976 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		541A42261E821D2600ADE976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541A422B1E821D2600ADE976 /* VWBreakLimitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VWBreakLimitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541A422F1E821D2600ADE976 /* VWBreakLimitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWBreakLimitTests.m; sourceTree = "<group>"; };
+		541A42311E821D2600ADE976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541A42361E821D2600ADE976 /* VWBreakLimitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VWBreakLimitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		541A423A1E821D2600ADE976 /* VWBreakLimitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VWBreakLimitUITests.m; sourceTree = "<group>"; };
+		541A423C1E821D2600ADE976 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		541A42481E821F9A00ADE976 /* VWDownloadListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWDownloadListViewController.h; sourceTree = "<group>"; };
+		541A42491E821F9A00ADE976 /* VWDownloadListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWDownloadListViewController.m; sourceTree = "<group>"; };
+		541A424B1E82200800ADE976 /* VWDownloadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWDownloadCell.h; sourceTree = "<group>"; };
+		541A424C1E82200800ADE976 /* VWDownloadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWDownloadCell.m; sourceTree = "<group>"; };
+		541A424D1E82200800ADE976 /* VWDownloadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VWDownloadCell.xib; sourceTree = "<group>"; };
+		541A42961E83BDBF00ADE976 /* VWLimitBreaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWLimitBreaker.h; sourceTree = "<group>"; };
+		541A42971E83BDBF00ADE976 /* VWLimitBreaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWLimitBreaker.m; sourceTree = "<group>"; };
+		54E2CDB31E865030004EE225 /* VWFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VWFileHelper.h; sourceTree = "<group>"; };
+		54E2CDB41E865030004EE225 /* VWFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VWFileHelper.m; sourceTree = "<group>"; };
+		8EC19B79935BD95617AEA3AC /* Pods-VWBreakLimit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VWBreakLimit.release.xcconfig"; path = "Pods/Target Support Files/Pods-VWBreakLimit/Pods-VWBreakLimit.release.xcconfig"; sourceTree = "<group>"; };
+		FC1FFECC8F3FB1253EF26E33 /* libPods-VWBreakLimit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VWBreakLimit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		541A420F1E821D2600ADE976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D16E8940174CFFDB17440A6 /* libPods-VWBreakLimit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541A42281E821D2600ADE976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541A42331E821D2600ADE976 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A0550AEFB3AE3785980A5CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC1FFECC8F3FB1253EF26E33 /* libPods-VWBreakLimit.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		541A42091E821D2600ADE976 = {
+			isa = PBXGroup;
+			children = (
+				541A42141E821D2600ADE976 /* VWBreakLimit */,
+				541A422E1E821D2600ADE976 /* VWBreakLimitTests */,
+				541A42391E821D2600ADE976 /* VWBreakLimitUITests */,
+				541A42131E821D2600ADE976 /* Products */,
+				BB7BDA2CED704D6A9C668C84 /* Pods */,
+				0A0550AEFB3AE3785980A5CD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		541A42131E821D2600ADE976 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				541A42121E821D2600ADE976 /* VWBreakLimit.app */,
+				541A422B1E821D2600ADE976 /* VWBreakLimitTests.xctest */,
+				541A42361E821D2600ADE976 /* VWBreakLimitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		541A42141E821D2600ADE976 /* VWBreakLimit */ = {
+			isa = PBXGroup;
+			children = (
+				541A42921E83BAC900ADE976 /* VWBreakLimitManager */,
+				541A42181E821D2600ADE976 /* AppDelegate.h */,
+				541A42191E821D2600ADE976 /* AppDelegate.m */,
+				541A421B1E821D2600ADE976 /* ViewController.h */,
+				541A421C1E821D2600ADE976 /* ViewController.m */,
+				541A421E1E821D2600ADE976 /* Main.storyboard */,
+				541A42211E821D2600ADE976 /* Assets.xcassets */,
+				541A42231E821D2600ADE976 /* LaunchScreen.storyboard */,
+				541A42261E821D2600ADE976 /* Info.plist */,
+				541A42151E821D2600ADE976 /* Supporting Files */,
+				541A42481E821F9A00ADE976 /* VWDownloadListViewController.h */,
+				541A42491E821F9A00ADE976 /* VWDownloadListViewController.m */,
+				541A424B1E82200800ADE976 /* VWDownloadCell.h */,
+				541A424C1E82200800ADE976 /* VWDownloadCell.m */,
+				541A424D1E82200800ADE976 /* VWDownloadCell.xib */,
+			);
+			path = VWBreakLimit;
+			sourceTree = "<group>";
+		};
+		541A42151E821D2600ADE976 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				541A42161E821D2600ADE976 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		541A422E1E821D2600ADE976 /* VWBreakLimitTests */ = {
+			isa = PBXGroup;
+			children = (
+				541A422F1E821D2600ADE976 /* VWBreakLimitTests.m */,
+				541A42311E821D2600ADE976 /* Info.plist */,
+			);
+			path = VWBreakLimitTests;
+			sourceTree = "<group>";
+		};
+		541A42391E821D2600ADE976 /* VWBreakLimitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				541A423A1E821D2600ADE976 /* VWBreakLimitUITests.m */,
+				541A423C1E821D2600ADE976 /* Info.plist */,
+			);
+			path = VWBreakLimitUITests;
+			sourceTree = "<group>";
+		};
+		541A42921E83BAC900ADE976 /* VWBreakLimitManager */ = {
+			isa = PBXGroup;
+			children = (
+				541A42961E83BDBF00ADE976 /* VWLimitBreaker.h */,
+				541A42971E83BDBF00ADE976 /* VWLimitBreaker.m */,
+				54E2CDB31E865030004EE225 /* VWFileHelper.h */,
+				54E2CDB41E865030004EE225 /* VWFileHelper.m */,
+			);
+			path = VWBreakLimitManager;
+			sourceTree = "<group>";
+		};
+		BB7BDA2CED704D6A9C668C84 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A5CFFD863E7E7C1A9355926 /* Pods-VWBreakLimit.debug.xcconfig */,
+				8EC19B79935BD95617AEA3AC /* Pods-VWBreakLimit.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		541A42111E821D2600ADE976 /* VWBreakLimit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541A423F1E821D2600ADE976 /* Build configuration list for PBXNativeTarget "VWBreakLimit" */;
+			buildPhases = (
+				C66D839DA654DB07A4DA09CB /* [CP] Check Pods Manifest.lock */,
+				541A420E1E821D2600ADE976 /* Sources */,
+				541A420F1E821D2600ADE976 /* Frameworks */,
+				541A42101E821D2600ADE976 /* Resources */,
+				051C729369F0C4DF5A8005E9 /* [CP] Embed Pods Frameworks */,
+				53F8C4133B5939C4DC0EE23C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VWBreakLimit;
+			productName = VWBreakLimit;
+			productReference = 541A42121E821D2600ADE976 /* VWBreakLimit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		541A422A1E821D2600ADE976 /* VWBreakLimitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541A42421E821D2600ADE976 /* Build configuration list for PBXNativeTarget "VWBreakLimitTests" */;
+			buildPhases = (
+				541A42271E821D2600ADE976 /* Sources */,
+				541A42281E821D2600ADE976 /* Frameworks */,
+				541A42291E821D2600ADE976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541A422D1E821D2600ADE976 /* PBXTargetDependency */,
+			);
+			name = VWBreakLimitTests;
+			productName = VWBreakLimitTests;
+			productReference = 541A422B1E821D2600ADE976 /* VWBreakLimitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		541A42351E821D2600ADE976 /* VWBreakLimitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 541A42451E821D2600ADE976 /* Build configuration list for PBXNativeTarget "VWBreakLimitUITests" */;
+			buildPhases = (
+				541A42321E821D2600ADE976 /* Sources */,
+				541A42331E821D2600ADE976 /* Frameworks */,
+				541A42341E821D2600ADE976 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				541A42381E821D2600ADE976 /* PBXTargetDependency */,
+			);
+			name = VWBreakLimitUITests;
+			productName = VWBreakLimitUITests;
+			productReference = 541A42361E821D2600ADE976 /* VWBreakLimitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		541A420A1E821D2600ADE976 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = voicewitness;
+				TargetAttributes = {
+					541A42111E821D2600ADE976 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 96EGACUW76;
+						ProvisioningStyle = Automatic;
+					};
+					541A422A1E821D2600ADE976 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 541A42111E821D2600ADE976;
+					};
+					541A42351E821D2600ADE976 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 541A42111E821D2600ADE976;
+					};
+				};
+			};
+			buildConfigurationList = 541A420D1E821D2600ADE976 /* Build configuration list for PBXProject "VWBreakLimit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 541A42091E821D2600ADE976;
+			productRefGroup = 541A42131E821D2600ADE976 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				541A42111E821D2600ADE976 /* VWBreakLimit */,
+				541A422A1E821D2600ADE976 /* VWBreakLimitTests */,
+				541A42351E821D2600ADE976 /* VWBreakLimitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		541A42101E821D2600ADE976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541A424F1E82200800ADE976 /* VWDownloadCell.xib in Resources */,
+				541A42251E821D2600ADE976 /* LaunchScreen.storyboard in Resources */,
+				541A42221E821D2600ADE976 /* Assets.xcassets in Resources */,
+				541A42201E821D2600ADE976 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541A42291E821D2600ADE976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541A42341E821D2600ADE976 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		051C729369F0C4DF5A8005E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VWBreakLimit/Pods-VWBreakLimit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53F8C4133B5939C4DC0EE23C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VWBreakLimit/Pods-VWBreakLimit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C66D839DA654DB07A4DA09CB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		541A420E1E821D2600ADE976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541A424E1E82200800ADE976 /* VWDownloadCell.m in Sources */,
+				541A421D1E821D2600ADE976 /* ViewController.m in Sources */,
+				54E2CDB51E865030004EE225 /* VWFileHelper.m in Sources */,
+				541A424A1E821F9A00ADE976 /* VWDownloadListViewController.m in Sources */,
+				541A421A1E821D2600ADE976 /* AppDelegate.m in Sources */,
+				541A42171E821D2600ADE976 /* main.m in Sources */,
+				541A42981E83BDC000ADE976 /* VWLimitBreaker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541A42271E821D2600ADE976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541A42301E821D2600ADE976 /* VWBreakLimitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		541A42321E821D2600ADE976 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				541A423B1E821D2600ADE976 /* VWBreakLimitUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		541A422D1E821D2600ADE976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541A42111E821D2600ADE976 /* VWBreakLimit */;
+			targetProxy = 541A422C1E821D2600ADE976 /* PBXContainerItemProxy */;
+		};
+		541A42381E821D2600ADE976 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 541A42111E821D2600ADE976 /* VWBreakLimit */;
+			targetProxy = 541A42371E821D2600ADE976 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		541A421E1E821D2600ADE976 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541A421F1E821D2600ADE976 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		541A42231E821D2600ADE976 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				541A42241E821D2600ADE976 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		541A423D1E821D2600ADE976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		541A423E1E821D2600ADE976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		541A42401E821D2600ADE976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A5CFFD863E7E7C1A9355926 /* Pods-VWBreakLimit.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96EGACUW76;
+				INFOPLIST_FILE = VWBreakLimit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.VWBreakLimit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		541A42411E821D2600ADE976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EC19B79935BD95617AEA3AC /* Pods-VWBreakLimit.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 96EGACUW76;
+				INFOPLIST_FILE = VWBreakLimit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.VWBreakLimit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		541A42431E821D2600ADE976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VWBreakLimitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.VWBreakLimitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VWBreakLimit.app/VWBreakLimit";
+			};
+			name = Debug;
+		};
+		541A42441E821D2600ADE976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VWBreakLimitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.VWBreakLimitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VWBreakLimit.app/VWBreakLimit";
+			};
+			name = Release;
+		};
+		541A42461E821D2600ADE976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VWBreakLimitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.VWBreakLimitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VWBreakLimit;
+			};
+			name = Debug;
+		};
+		541A42471E821D2600ADE976 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = VWBreakLimitUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.voicewh.VWBreakLimitUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = VWBreakLimit;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		541A420D1E821D2600ADE976 /* Build configuration list for PBXProject "VWBreakLimit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541A423D1E821D2600ADE976 /* Debug */,
+				541A423E1E821D2600ADE976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541A423F1E821D2600ADE976 /* Build configuration list for PBXNativeTarget "VWBreakLimit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541A42401E821D2600ADE976 /* Debug */,
+				541A42411E821D2600ADE976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541A42421E821D2600ADE976 /* Build configuration list for PBXNativeTarget "VWBreakLimitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541A42431E821D2600ADE976 /* Debug */,
+				541A42441E821D2600ADE976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		541A42451E821D2600ADE976 /* Build configuration list for PBXNativeTarget "VWBreakLimitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				541A42461E821D2600ADE976 /* Debug */,
+				541A42471E821D2600ADE976 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 541A420A1E821D2600ADE976 /* Project object */;
+}
