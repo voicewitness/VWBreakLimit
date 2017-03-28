@@ -137,6 +137,8 @@ static NSURL *_sysCacheDirectory;
     return self;
 }
 
+#pragma mark Private
+
 - (void)createDirectoryBasedTimestamp:(double)timestamp {
 //    dispatch_barrier_async(_ioQueue, ^{
         NSFileManager *fileManager = [NSFileManager defaultManager];
@@ -158,6 +160,12 @@ static NSURL *_sysCacheDirectory;
 //    });
 }
 
+- (NSString *)taskDescriptionForTask:(NSURLSessionTask *)task {
+    return [NSString stringWithFormat:@"%p",task];
+}
+
+#pragma mark Public
+
 - (void)resume {
     if (self.state != BreakerRunningStateWait &&
         self.state != BreakerRunningStateCompleted &&
@@ -175,6 +183,8 @@ static NSURL *_sysCacheDirectory;
         VWLog(VWLogLevelProcedure,@"\n>>>>>>>>>>>>\nleading task failed:%@\n<<<<<<<<<<<<",error);
     }];
 }
+
+#pragma mark Dispatch
 
 - (void)leadWayWithMethod:(NSString *)method URLString:(NSString *)URLString success:(void(^)(int64_t totalUnitCount))successHandler failed:(void(^)(NSError *error))failureHandler {
     self.state = BreakerRunningStateLeading;
@@ -271,9 +281,7 @@ static NSURL *_sysCacheDirectory;
     return task;
 }
 
-- (NSString *)taskDescriptionForTask:(NSURLSessionTask *)task {
-    return [NSString stringWithFormat:@"%p",task];
-}
+#pragma mark Downloading
 
 - (void)downloadTaskCompleted:(NSURLSessionDownloadTask *)task {
     [self downloadTaskFileNeedMerge:task];
@@ -345,6 +353,8 @@ static NSURL *_sysCacheDirectory;
     }
 }
 
+#pragma mark Clean
+
 - (void)cleanDownloadTaskWithIdentifier:(NSUInteger)identifier {
     [self.mutableSessionTaskInfosKeyedByTaskIdentifier removeObjectForKey:@(identifier)];
     [self.taskIdentifierQueue removeObject:@(identifier)];
@@ -373,9 +383,20 @@ static VWLogLevel _logLevel;
     [task resume];
 }
 
+#pragma mark Getter
+
 + (VWLogLevel)logLevel {
     return _logLevel;
 }
+
+- (NSMutableArray<VWBreakerTask *> *)tasks {
+    if (!_tasks) {
+        _tasks = [NSMutableArray<VWBreakerTask *> new];
+    }
+    return _tasks;
+}
+
+#pragma mark Setter
 
 + (void)setLogLevel:(VWLogLevel)logLevel {
     _logLevel = logLevel;
